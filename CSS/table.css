@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    padding: 6px 6px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none !important;
+    text-transform: none;
+    border-radius: 36px;
+    box-sizing: border-box;
+    border-style: solid;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+}
+header {
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 500;
+
+}
+main {
+    position: relative;
+    top: 45px;
+    height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+table {
+  border-collapse: collapse;
+}
+ th {
+  background: #F32C52;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #fa5e7b;
+}
+tr:nth-child(odd) {
+    background: #ff99ac;
+}
+tr:hover {
+  background: #ffadad;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/form.css">
+</head>
+<body>
+    <a href="index.html"><button>Back</button></a>
+    <header>
+        <h1>HTML Form</h1><br>
+    </header>
+    <main>
+        <section class="container"> 
+            <h3>Profile</h3><br>
+            <!-- form starts -->
+            <form  method="GET" enctype="multipart/form-data">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="age">Age</label><br>
+                    <input type="number" name="age" id="age" min="1" max="80">
+                </div>
+                <div>
+                    <label for="date">Birthdate</label><br>
+                    <input type="date" name="date" id="date" min="2001-01-01">
+                </div>
+                <div>
+                    <label for="">Gender</label>
+                    <div>
+                        <span for="male">Male</span>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div>
+                        <span for="female">Female</span>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                        <div>
+                            <span for="Other">Other</span>
+                            <input type="radio" name="Other" id="Other" value="Other">
+                        </div>
+                </div>
+                <div>
+                    <label for=""> Skills</label>
+                    <div>
+                        <span for="Web development">Web development</span>
+                        <input type="checkbox" name="Web development" id="Web development">
+                    </div>
+                    <div>
+                        <span for="Python">Python</span>
+                        <input type="checkbox" name="Python" id="Python">
+                    </div>
+                    <div>
+                        <span for="Machine Learning">Machine Learning</span>
+                        <input type="checkbox" name="Machine Learning" id="Machine Learning">
+                    </div>
+                </div>
+                <div>
+                    <label for="Experience">Experience</label><br>
+                    <select name="Experience" id="Experience">
+                        <option value="" disabled selected hidden>Selet</option>
+                        <option value="Beginner">Beginner</option>
+                        <option label="Intermediate" value="Intermediate"></option>
+                        <option label="Expert" value="Expert"></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bio">Bio</label><br>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+                <div>
+                    <label for="file">File</label><br>
+                    <input id="file" type="file" name="file">
+                </div>
+                <div>
+                    <label for="url">Github Profile</label><br>
+                    <input type="url" placeholder="Github Profile" name="url" id="url">
+                </div>
+             
+                <div>
+                    <label>
+                        Password</label> <br>
+                        <input type="password" name="password" required>
+                    
+                </div>
+                <!-- type:reset resets the data in the form -->
+                <button type="reset">Reset</button>
+                <!-- type:submit submits the data in the form -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
